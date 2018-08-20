@@ -24,7 +24,7 @@
 
                     }, 1000, function () {
                         $(this).removeClass("hoverOff")
-                    }).addClass("hoverOn");;
+                    }).addClass("hoverOn");
 
             })
         }
