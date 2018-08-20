@@ -18,12 +18,12 @@
 
 }
 #logo {
-   
     color: aliceblue;
     padding: 10px;
     float: left;
     width: 600px;
     font-size: 70px;
+    
 }
 time 
 {
@@ -50,7 +50,7 @@ time
     float: left;
     background-color: #0066FF;
     transition: ease-out 1s;
-    transition-duration:1.5s;
+    transition-duration:1s;
     
 }
 .kafelek1:hover {
@@ -73,7 +73,8 @@ time
     margin: 10px;
     float: left;
     background-color: #00CC33;
-    transition: ease 1s;
+    transition: ease-out 1s;
+    
     
 }
 .kafelek2:hover {
@@ -102,7 +103,7 @@ time
     margin: 10px;
     float: left;
     background-color: #666666;
-    transition:ease 1s;
+    transition:ease-out 1s;
 }
 .kafelek4:hover {
     text-align: center;
@@ -138,6 +139,21 @@ time
     float: left;
     text-align: center;
     border-radius:5px;
+    transition: ease 1s;
+}
+.yt:hover
+{
+    background-color:aliceblue;
+}
+.icon-youtube {
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: ease 1s;
+}
+.icon-youtube:hover 
+{
+    color: #d94348;
 }
 .fb {
     margin: 10px;
@@ -147,6 +163,22 @@ time
     float: left;
     text-align: center;
     border-radius: 5px;
+    transition: ease 1s;
+}
+.fb:hover
+{
+    background-color:aliceblue;
+}
+.icon-facebook
+{
+     display: block;
+    height: 100%;
+    width: 100%;
+    transition: ease 1s;
+}
+.icon-facebook:hover 
+{
+    color: #4668b3;
 }
 .gp {
     margin: 10px;
@@ -155,6 +187,22 @@ time
     background-color: #d34836;
     float: left;
     border-radius: 5px;
+    transition: ease 1s;
+}
+.gp:hover
+{
+    background-color:aliceblue;
+}
+.icon-gplus
+{
+     display: block;
+    height: 100%;
+    width: 100%;
+    transition: ease 1s;
+}
+.icon-gplus:hover 
+{
+    color: #d34836;
 }
 .tw {
     margin: 10px;
@@ -164,6 +212,22 @@ time
     float: left;
     text-align: center;
     border-radius: 5px;
+    transition: ease 1s;
+}
+.tw:hover
+{
+    background-color:aliceblue;
+}
+.icon-twitter-bird
+{
+     display: block;
+    height: 100%;
+    width: 100%;
+    transition: ease 1s;
+}
+.icon-twitter-bird:hover 
+{
+    color: deepskyblue;
 }
 #social {
     width: 100%;
