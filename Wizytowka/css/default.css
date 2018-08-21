@@ -6,6 +6,7 @@
   color:aliceblue;
   text-decoration:none;
 }
+
 #container {
     width: 1000px;
     margin-left: auto;
@@ -21,20 +22,18 @@
     color: aliceblue;
     padding: 10px;
     float: left;
-    width: 600px;
+    width: 500px;
     font-size: 70px;
-    
+    text-shadow: 2px 2px rgba(1, 0, 0, 0.69);
 }
-time 
-{
-   
+time {
     color: aliceblue;
-    padding:10px;
+    padding: 10px;
     float: left;
     font-size: 70px;
-    margin:85px 0px;
+    margin: 50px 0px;
+    text-shadow: 2px 2px rgba(1, 0, 0, 0.69);
     
-
 }
 .container2
 {
@@ -114,11 +113,11 @@ time
     background-color: #444444;
     border-radius:10px 100px;
 }
-.podpis
-{   margin-bottom:20px;
-    color:aliceblue;
-    position:relative;
-    
+.podpis {
+    margin-bottom: 20px;
+    color: aliceblue;
+    position: relative;
+    text-shadow: 2px 2px rgba(1, 0, 0, 0.69);
 }
 #motto {
     width: 380px;
@@ -218,12 +217,12 @@ time
 {
     background-color:aliceblue;
 }
-.icon-twitter-bird
-{
-     display: block;
+.icon-twitter-bird {
+    display: block;
     height: 100%;
     width: 100%;
     transition: ease 1s;
+    
 }
 .icon-twitter-bird:hover 
 {
@@ -234,4 +233,8 @@ time
     height: 100%;
     clear:both;
     
+}
+.ikona
+{
+    text-shadow:2px 2px rgba(1, 0, 0, 0.69);
 }
