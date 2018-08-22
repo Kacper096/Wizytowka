@@ -1,6 +1,7 @@
 
 .icon-user:before { content: '\e800'; } /* '' */
 .icon-phone:before { content: '\e801'; } /* '' */
+.icon-emo-thumbsup:before { content: '\e804'; } /* '' */
 .icon-gplus:before { content: '\f0d5'; } /* '' */
 .icon-laptop:before { content: '\f109'; } /* '' */
 .icon-youtube:before { content: '\f167'; } /* '' */

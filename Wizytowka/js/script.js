@@ -5,9 +5,11 @@ function showClock()
 {
     const currentDate = new Date();
     const element = document.querySelector("time");
+    const days = ["Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela"];
 
-    element.innerHTML = leadingZero(currentDate.getDate()) + "/" + leadingZero((currentDate.getMonth() + 1)) + "/" + currentDate.getFullYear() + "<br/>" +
+    element.innerHTML = "<span id='dzien_tygodnia'style='font-size:20px;'>Dzisiaj jest " + days[currentDate.getDay() - 1] + "</span><br/>"+leadingZero(currentDate.getDate()) + "/" + leadingZero((currentDate.getMonth() + 1)) + "/" + currentDate.getFullYear() + "<br/>" +
         leadingZero(currentDate.getHours()) + ":" + leadingZero(currentDate.getMinutes()) + ":" + leadingZero(currentDate.getSeconds());
+    
 
     setTimeout(function ()
     {
@@ -69,10 +71,33 @@ $(document).ready(
                     });
             }
             })
+        $(".kafel", this).click(function (e)
+        {
+            var content = $(".kafelek3");
+            const href = $(this).attr('href');
+            $.ajax({
+                url: href,
+                
+                beforeSend: function () {
+                    
+                    content.empty();
+                    
+                },
+                success: function () {
 
-        
-        
+                    content.load(href + " .kafelek3 div");
+                    
+                },
+                error: function () {
+                    content.html("<p>Przepraszamy, ale strony nie udało się załadować</p>");
+                },
+                complete: function () {
+                    
+                }
 
+            });
+            e.preventDefault();
+        })
        
 
     })

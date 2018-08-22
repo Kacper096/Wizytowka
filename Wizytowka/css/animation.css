@@ -7,7 +7,6 @@
   -webkit-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
   display: inline-block;
-  animation-duration:4s;
 }
 @-moz-keyframes spin {
   0% {
