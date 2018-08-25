@@ -29,14 +29,18 @@
 
 }
 time {
-    margin:10px;
+    margin:5px;
     color: aliceblue;
     padding: 10px;
     float: left;
     font-size: 70px;
     text-shadow: 2px 2px rgba(1, 0, 0, 0.69);
     line-height:85px;
-    
+    cursor:default;
+}
+footer span
+{
+    cursor:default;
 }
 #dzien_tygodnia {
     
@@ -61,7 +65,7 @@ time {
     float: left;
     background-color: #0066FF;
     transition: ease-out 1s;
-    transition-duration:1s;
+    
     
 }
 .kafelek1:hover {
@@ -104,7 +108,7 @@ time {
     margin:10px;
     width:480px;
     height:304px;
-    background-color:#666666;
+    background-color:rgba(102,102,102,0.68);
     float:left;
     font-family:'Lato',sans-serif;
 }
@@ -266,4 +270,20 @@ time {
 .ikona
 {
     text-shadow:2px 2px rgba(1, 0, 0, 0.69);
+}
+
+#email
+{
+    color:aliceblue;
+    text-decoration:none;
+}
+
+#email:hover
+{
+    color:rgba(232, 245, 70, 0.59);
+}
+
+#email:active
+{
+    color: rgba(232,245,70,1);
 }

@@ -1,0 +1,4 @@
+ <article class="kafelek3">
+                   <div><h2>Krótko o mnie...</h2><br/>
+                    <p>Jestem programistą webowym, aktualnie nie pracuję w zawodzie zajmuję się tylko hobbistycznie.<br /></p>
+                    </div>

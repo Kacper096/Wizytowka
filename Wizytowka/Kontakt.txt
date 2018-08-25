@@ -1,0 +1,5 @@
+<article class="kafelek3">
+                   <div><h2>Kontakt</h2><br/>
+                    <p>E-mail: tubedzie@mail.com  <br />Kontakt: 512012942 <br/></p>
+                    </div>
+                </article>

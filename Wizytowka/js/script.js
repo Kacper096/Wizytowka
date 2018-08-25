@@ -22,7 +22,10 @@ $(document).ready(
         showClock();
         if ($(".podpis", this).hasClass("hoverOff"))
         {
-            $(".kafelek1",this).mouseenter(function () {
+
+          
+
+           $(".kafelek1",this).on("mouseenter",function () {
                 $(".podpis", this).animate(
                     {
                         "right": 30,
@@ -32,7 +35,7 @@ $(document).ready(
                         $(this).removeClass("hoverOff");
 
                     }).addClass("hoverOn");
-
+               
             })
             
             $(".kafelek").mouseenter(function () {
@@ -81,18 +84,18 @@ $(document).ready(
                 beforeSend: function () {
                     
                     content.empty();
-                    
+                    content.append('<i class="icon-spin6 ikona"></i>');
                 },
-                success: function () {
+                success: function (result) {
 
-                    content.load(href + " .kafelek3 div");
+                    content.html(result);
                     
                 },
                 error: function () {
-                    content.html("<p>Przepraszamy, ale strony nie udało się załadować</p>");
+                    content.html("<p>Przepraszamy, ale strony nie udało się załadować.</p>").append('<i class="icon-emo-cry ikona"></i>');
                 },
                 complete: function () {
-                    
+                    content.remove('<i class="icon-spin6 ikona"></i>');
                 }
 
             });
