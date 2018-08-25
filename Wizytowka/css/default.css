@@ -108,7 +108,7 @@ footer span
     margin:10px;
     width:480px;
     height:304px;
-    background-color:rgba(102,102,102,0.68);
+    background-color:#666666;
     float:left;
     font-family:'Lato',sans-serif;
 }
@@ -156,10 +156,10 @@ footer span
     width: 380px;
     height: 42px;
     margin:10px;
+    padding:50px;
     background-color:#FF6633;
     float:left;
     text-align:center;
-    padding:50px;
     font-size:26px;
     
 }
@@ -287,3 +287,4 @@ footer span
 {
     color: rgba(232,245,70,1);
 }
+

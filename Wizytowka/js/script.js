@@ -17,6 +17,7 @@ function showClock()
     },1000)
 }
 
+
 $(document).ready(
     function () {
         showClock();
@@ -26,27 +27,30 @@ $(document).ready(
           
 
            $(".kafelek1",this).on("mouseenter",function () {
+              if($(".podpis",this).hasClass("hoverOff"))
                 $(".podpis", this).animate(
                     {
                         "right": 30,
 
 
                     }, 1000, function () {
-                        $(this).removeClass("hoverOff");
+                        
 
-                    }).addClass("hoverOn");
+                    }).addClass("hoverOn").removeClass("hoverOff");
+               
                
             })
             
             $(".kafelek").mouseenter(function () {
+                if($(".podpis",this).hasClass("hoverOff"))
                 $(".podpis", this).animate(
                     {
                         "left": 30,
 
 
                     }, 1000, function () {
-                        $(this).removeClass("hoverOff")
-                    }).addClass("hoverOn");
+                        
+                    }).addClass("hoverOn").removeClass("hoverOff");
 
             })
         }
@@ -93,6 +97,7 @@ $(document).ready(
                 },
                 error: function () {
                     content.html("<p>Przepraszamy, ale strony nie udało się załadować.</p>").append('<i class="icon-emo-cry ikona"></i>');
+                    
                 },
                 complete: function () {
                     content.remove('<i class="icon-spin6 ikona"></i>');
