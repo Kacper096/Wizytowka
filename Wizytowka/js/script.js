@@ -5,9 +5,9 @@ function showClock()
 {
     const currentDate = new Date();
     const element = document.querySelector("time");
-    const days = ["Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela"];
+    const days = ["Niedziela","Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"];
 
-    element.innerHTML = "<span id='dzien_tygodnia'style='font-size:20px;'>Dzisiaj jest " + days[currentDate.getDay() - 1] + "</span><br/>"+leadingZero(currentDate.getDate()) + "/" + leadingZero((currentDate.getMonth() + 1)) + "/" + currentDate.getFullYear() + "<br/>" +
+    element.innerHTML = "<span id='dzien_tygodnia'style='font-size:20px;'>Dzisiaj jest " + days[currentDate.getDay()] + "</span><br/>"+leadingZero(currentDate.getDate()) + "/" + leadingZero((currentDate.getMonth() + 1)) + "/" + currentDate.getFullYear() + "<br/>" +
         leadingZero(currentDate.getHours()) + ":" + leadingZero(currentDate.getMinutes()) + ":" + leadingZero(currentDate.getSeconds());
     
 
